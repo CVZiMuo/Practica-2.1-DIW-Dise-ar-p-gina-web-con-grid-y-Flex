@@ -1,3 +1,14 @@
+:root {
+    --sol-hover: color-mix(in srgb, var(--color-sol) 80%, var(--color-tinta));
+    --ola-hover: color-mix(in srgb, var(--color-ola) 80%, var(--color-tinta));
+    --oscuro-hover: color-mix(in srgb, var(--color-tinta) 80%, var(--color-superficie));
+    --alto-imagen-tarjeta: 180px;
+    --alto-bloque-visual: 280px;
+    --ancho-texto-hero: 60ch;
+    --borde-fino: 1px;
+    --borde-grueso: 2px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -164,3 +175,4 @@ main{
 .pie__legal-interior{
     justify-content: space-between;
 }
+
