@@ -238,18 +238,51 @@ main{
 }
 
 /*PLANES*/
-
+.entradas {
+    padding-block: var(--espacio-7);
+}
 .planes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio-4);
 }
 
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-3);
+    padding: var(--espacio-5);
+    background-color: var(--color-superficie);
+    border: var(--borde-grueso) solid var(--color-borde);
+    border-radius: var(--radio-m);
+}
+
+.plan--destacado {
+    background-color: var(--color-tinta);
+    color: var(--color-superficie);
+    border-color: var(--color-sol);
+    box-shadow: var(--sombra-fuerte);
+}
 .plan__etiqueta {
     align-self: flex-start;
+    padding: var(--espacio-1) var(--espacio-3);
+    background-color: var(--color-sol);
+    color: var(--color-tinta);
+    border-radius: var(--radio-pildora);
+    font-size: var(--texto-xs);
+    font-weight: var(--peso-fuerte);
 }
 
+
+.plan__precio {
+    font-size: var(--texto-2xl);
+    font-weight: var(--peso-negro);
+}
 .plan__lista{
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    gap: var(--espacio-2);
 }
 
 .pie{
@@ -265,8 +298,10 @@ main{
     display: grid;
 }
 
-.pie__legal-interior{
+.pie__legal-interior {
+    display: flex;
     justify-content: space-between;
+    padding-block: var(--espacio-3);
 }
 
 /*TITULOS*/
