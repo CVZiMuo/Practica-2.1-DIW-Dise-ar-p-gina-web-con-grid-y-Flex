@@ -285,19 +285,36 @@ main{
     gap: var(--espacio-2);
 }
 
+/*PIE PAGINA*/
 .pie{
+    background-color: var(--color-tinta);
+    gap:var(--color-superficie);
+}
+.pie a {
+    transition: color var(--transicion);
+}
+.pie a:hover {
+    color: var(--color-sol);
+}
+
+.pie__legal {
+    border-top: var(--borde-fino) solid var(--color-tinta-suave);
+}
+.pie__interior {
+    display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: var(--espacio-5);
+    padding-block: var(--espacio-6);
 }
-
-.pie__legal{
+.pie__columna--marca {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--espacio-2);
 }
-.pie__interior{
-    display: grid;
+.pie__titulo {
+    margin-bottom: var(--espacio-3);
+    font-size: var(--texto-m);
 }
-
 .pie__legal-interior {
     display: flex;
     justify-content: space-between;
