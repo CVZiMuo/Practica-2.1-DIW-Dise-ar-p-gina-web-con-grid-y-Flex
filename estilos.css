@@ -203,9 +203,15 @@ main{
 
 /*ESCENARIOS*/
 
+.escenarios {
+    padding-block: var(--espacio-7);
+}
 .bloque__texto{
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    gap: var(--espacio-3);
 }
 
 .bloque{
@@ -215,9 +221,23 @@ main{
 }
 
 .bloque__visual{
-    order: -1;
-    flex-direction: row-reverse;
+    min-height: var(--alto-bloque-visual);
+    border-radius: var(--radio-m);
+    background-color: var(--color-tinta-suave);
 }
+
+.bloque__titulo {
+    font-size: var(--texto-xl);
+}
+
+.bloque__visual--playa {
+    background-color: var(--color-sol);
+}
+.bloque__visual--pinar {
+    background-color: var(--color-ola);
+}
+
+/*PLANES*/
 
 .planes{
     display: grid;
