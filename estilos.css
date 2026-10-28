@@ -90,17 +90,33 @@ main{
     background-color: var(--color-sol);
     color: var(--color-tinta);
 }
+.boton--sol:hover {
+    background-color: var(--sol-hover);
+}
+
 .boton--ola {
     background-color: var(--color-ola);
     color: var(--color-superficie);
 }
+.boton--ola:hover {
+    background-color: var(--ola-hover);
+}
+
 .boton--oscuro{
     background-color: var(--color-oscuro);
     color: var(--color-superficie);
 }
+.boton--oscuro:hover {
+    background-color: var(--oscuro-hover);
+}
+
 .boton--borde {
     border: 2px solid var(--color-superficie);
     color: var(--color-superficie);
+}
+.boton--borde:hover {
+    background-color: var(--color-superficie);
+    color: var(--color-tinta);
 }
 
 /*DATOS*/
@@ -176,3 +192,8 @@ main{
     justify-content: space-between;
 }
 
+/*TITULOS*/
+.seccion__titulo {
+    font-size: var(--texto-xl);
+    margin-bottom: var(--espacio-5);
+}
