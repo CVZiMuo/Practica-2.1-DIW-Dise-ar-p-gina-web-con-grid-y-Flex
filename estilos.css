@@ -48,12 +48,18 @@ main{
     gap: var(--espacio-5);
 }
 .menu__enlace {
-    text-decoration: none;
+    padding: var(--espacio-1) var(--espacio-2);
+    border-radius: var(--radio-s);
+    transition: background-color var(--transicion);
+}
+.menu__enlace:hover {
+    background-color: var(--color-fondo);
 }
 
-.logo{
+.logo {
+    font-family: var(--fuente-titulo);
     font-size: var(--texto-l);
-    font-weight: var(--peso-fuerte);
+    font-weight: var(--peso-negro);
 }
 
 /*BANNER*/
@@ -68,14 +74,18 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: var(--espacio-3);
+    gap: var(--espacio-4);
 }
 .hero__titulo{
-    font-size: var(--texto-2xl);
+    font-size: var(--texto-3xl);
+}
+.hero__texto {
+    max-width: var(--ancho-texto-hero);
+    font-size: var(--texto-l);
 }
 .hero__acciones{    
     display: flex;
-    gap: var(--espacio-5);
+    gap: var(--espacio-3);
 }
 
 .boton{
@@ -129,22 +139,69 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: var(--espacio-4);
 }
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--espacio-4);
+    background-color: var(--color-superficie);
+    border-radius: var(--radio-m);
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+}
 .dato__valor {
     font-size: var(--texto-xl);
 }
 
-.cartel{
+.dato__etiqueta {
+    color: var(--color-tinta-suave);
+    font-size: var(--texto-s);
+}
+
+.cartel {
+    padding-block: var(--espacio-7);
+}
+.cartel__rejilla {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio-4);
 }
 .tarjeta{
     display: flex;
     flex-direction: column;
+    background-color: var(--color-superficie);
+    border-radius: var(--radio-m);
+    box-shadow: var(--sombra-suave);
+    overflow: hidden;
+    transition: box-shadow var(--transicion);
 }
-
-.tarjeta__boton{
+.tarjeta:hover {
+    box-shadow: var(--sombra-fuerte);
+}
+.tarjeta__cuerpo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--espacio-2);
+    padding: var(--espacio-4);
+}
+.tarjeta__titulo {
+    font-size: var(--texto-l);
+}
+.tarjeta__estilo {
+    color: var(--color-ola);
+    font-size: var(--texto-s);
+    font-weight: var(--peso-fuerte);
+}
+.tarjeta__texto {
+    color: var(--color-tinta-suave);
+}
+.tarjeta__boton {
     margin-top: auto;
 }
+
+/*ESCENARIOS*/
 
 .bloque__texto{
     flex-direction: column;
