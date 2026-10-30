@@ -326,3 +326,17 @@ main{
     font-size: var(--texto-xl);
     margin-bottom: var(--espacio-5);
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
